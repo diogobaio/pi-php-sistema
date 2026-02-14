@@ -1,0 +1,1 @@
+<img src="/img/plano_fundo.png" alt="PetMais - Tudo para seu Pet" class="dashboard-bg">

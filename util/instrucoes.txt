@@ -1,0 +1,23 @@
+# Criar uma pasta para o projeto e rodar no cmd:
+
+# Iniciar o composer:
+    composer init
+
+# Preencher os dados solicitados
+
+# Alterar o arquivo composer para:
+        "psr-4": {
+            "App\\": "app/"
+        }
+
+# Criar uma pasta public com um index.php dentro e pastas e arquivos css, js e img
+
+# Iniciar o servidor do PHP
+    php -S localhost:8000 -t public
+
+
+## QUANDO ABRIR O PROJETO EM UM NOVO PC
+    composer install
+
+## SE DER ERRO DE ROTA (404)
+    composer dump-autoload

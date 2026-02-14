@@ -1,0 +1,290 @@
+/* Configurações Gerais */
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --light-bg: #f8f9fa;
+    --dark-text: #333333;
+    --white: #ffffff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand, .nav-link, .navbar-text {
+    color: var(--white) !important;
+}
+
+.nav-link:hover {
+    opacity: 0.9;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+/* Barra de Busca */
+
+.search-input {
+    border-radius: 20px;
+    border: none;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #e9ecef;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    border-top: 1px solid #dee2e6;
+}
+
+.footer p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Login */
+
+.login-page {
+    background: #ffa500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login-card .header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-card .logo {
+    max-width: 250px;
+    height: auto;
+}
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--dark-text);
+    font-weight: 600;
+}
+
+.login-card .form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.btn-entrar {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.btn-entrar:hover {
+    background-color: #0b5ed7;
+    color: var(--white);
+}
+
+.link-recuperar {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.link-recuperar:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Containeres (Listas e Formularios) */
+
+.list-container, .form-container {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.list-header h1, .form-container h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0;
+    color: var(--dark-text);
+}
+
+/* Tabelas */
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    color: #495057;
+    font-weight: 600;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Botões de Ações */
+
+.btn-adicionar {
+    background-color: var(--success-color);
+    color: var(--white);
+    border: none;
+}
+
+.btn-adicionar:hover {
+    background-color: #157347;
+    color: var(--white);
+}
+
+.btn-editar {
+    background-color: var(--warning-color);
+    color: #000;
+    border: none;
+}
+
+.btn-editar:hover {
+    background-color: #ffca2c;
+    color: #000;
+}
+
+.btn-excluir {
+    background-color: var(--danger-color);
+    color: var(--white);
+    border: none;
+}
+
+.btn-excluir:hover {
+    background-color: #bb2d3b;
+    color: var(--white);
+}
+
+.btn-sair {
+    background-color: rgba(255,255,255,0.2);
+    color: var(--white);
+    border: 1px solid rgba(255,255,255,0.3);
+    margin-left: 10px;
+}
+
+.btn-sair:hover {
+    background-color: rgba(255,255,255,0.3);
+    color: var(--white);
+}
+
+/* Ações do Formulario */
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 2rem;
+    justify-content: flex-end;
+}
+
+.btn-voltar {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.btn-voltar:hover {
+    background-color: #5c636a;
+    color: var(--white);
+}
+
+.btn-limpar {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+}
+.btn-limpar:hover {
+   background-color: #ffca2c;  
+}
+
+.btn-salvar {
+    background-color: var(--success-color);
+    color: var(--white);
+    min-width: 120px;
+}
+
+.btn-salvar:hover {
+    background-color: #157347;
+    color: var(--white);
+}
+
+/* Alertas específicos em Formularios e Listas */
+
+.alert {
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+}
+
+/* Dashboard Background */
+
+main {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
